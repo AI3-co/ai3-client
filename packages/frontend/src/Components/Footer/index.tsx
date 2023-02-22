@@ -55,14 +55,18 @@ const Footer: FC<FooterProps> = ({ data: footer }) => {
   const { t } = useTranslation();
   footer = {
     id: 1,
+    // @ts-ignore
     logo: null,
+    // @ts-ignore
     useful_links: [],
+    // @ts-ignore
     discover: [],
     social: [
       {
         id: 1,
         name: 'twitter',
         title: 'Twitter',
+        // @ts-ignore
         type: null,
         link: 'https://twitter.com/ai3_dao',
         disabled: false,
@@ -71,6 +75,7 @@ const Footer: FC<FooterProps> = ({ data: footer }) => {
         id: 2,
         name: 'github',
         title: 'Github',
+        // @ts-ignore
         type: null,
         link: 'https://github.com/AI3-co',
         disabled: false,
@@ -79,6 +84,7 @@ const Footer: FC<FooterProps> = ({ data: footer }) => {
         id: 3,
         name: 'discord',
         title: 'Discord',
+        // @ts-ignore
         type: null,
         link: 'https://discord.gg/6584yVqb',
         disabled: false,

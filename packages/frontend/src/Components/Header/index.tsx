@@ -231,6 +231,7 @@ const MenuLinks = ({ isOpen }: { isOpen: boolean }) => {
         width="full"
         pt={[8, 4, 0, 0]}
       >
+        {/* @ts-ignore */}
         {NavLinks.map((item, index) => (
           <MenuItem
             to={item.href}
