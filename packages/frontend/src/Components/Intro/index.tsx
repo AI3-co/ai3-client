@@ -53,7 +53,7 @@ const Intro: FC<IntroProps> = ({ heading, subHeading }) => {
             fontSize={{ base: '1.25rem', xl: '1.5rem' }}
           >
             {/* {t(subHeading!)} */}
-            AI3 is a community of builders  at the intersection of AI and Web3
+            AI3 is a community of builders at the intersection of AI and Web3
           </Text>
           <Flex justifyContent="center" w="100" mt="3rem">
             <Button
