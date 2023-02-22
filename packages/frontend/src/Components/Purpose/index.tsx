@@ -21,6 +21,40 @@ type PurposeProps = Pick<HomePage, 'values' | 'mission' | 'goals'>;
 
 const Purpose: FC<PurposeProps> = ({ values, mission, goals }) => {
   const isMobile = useBreakpointValue({ base: true, lg: false });
+  values = [
+    {
+      id: 1,
+      name: 'Tech for public good',
+      title: 'Tech for public good',
+      description: 'Tech for public good',
+    },
+    {
+      id: 2,
+      name: 'Openness and Transparency',
+      title: 'Openness and Transparency',
+      description: 'Building in public, open source and collaborative.',
+    },
+    {
+      id: 3,
+      name: 'Community First',
+      title: 'Community First',
+      description: 'Equal opportunity to participate in the ecosystem. build for the community, by the community',
+    }
+  ];
+  goals = [
+    {
+      id: 1,
+      name: 'To build community, discuss, debate at the intersection of web3 and Ai technology.',
+      title: 'To build community, discuss, debate at the intersection of web3 and Ai technology.',
+      description: 'To build community, discuss, debate at the intersection of web3 and Ai technology.',
+    },
+    {
+      id: 2,
+      name: 'To build, support and scale new ventures at this intersection.',
+      title: 'To build, support and scale new ventures at this intersection.',
+      description: 'To build, support and scale new ventures at this intersection.',
+    }
+  ];
   const { t } = useTranslation();
   const valuesListStyle = {
     counterReset: 'values',
@@ -54,7 +88,6 @@ const Purpose: FC<PurposeProps> = ({ values, mission, goals }) => {
           mb="1rem"
         >
           {t(title)}
-          hi
         </Text>
         <Text variant={isMobile ? 'normalMobile' : 'normal'}>{t(body)}</Text>
       </Box>
@@ -65,7 +98,8 @@ const Purpose: FC<PurposeProps> = ({ values, mission, goals }) => {
     <Flex justify="center" wrap="wrap-reverse">
       <Box className="box-border" flex="3" minW={isMobile ? '100%' : '20rem'}>
         <Heading variant={isMobile ? 'mediumMobile' : 'medium'}>
-          {t('values.title')}
+          {/* {t('values.title')} */}
+          Values
         </Heading>
         <OrderedList sx={valuesListStyle}>
           {values?.map((value) => (
@@ -91,15 +125,17 @@ const Purpose: FC<PurposeProps> = ({ values, mission, goals }) => {
               fontWeight="bold"
               mb="0.9rem"
             >
-              {t('mission.title')}
+              {/* {t('mission.title')} */}
+              Mission
             </Text>
             <Text variant={isMobile ? 'normalMobile' : 'normal'}>
-              {t(mission!)}
+              AI3 exist to build a better future with the merging of AI and Web3
             </Text>
           </Box>
           <Box mb="3.4rem">
             <Text variant="large" fontWeight="bold" mb="1rem">
-              {t('goals.title')}
+              {/* {t('goals.title')} */}
+              Goals
             </Text>
             <OrderedList sx={goalsListStyle}>
               {goals?.map((goal) => (
@@ -112,38 +148,6 @@ const Purpose: FC<PurposeProps> = ({ values, mission, goals }) => {
             </OrderedList>
           </Box>
         </Box>
-        <LinkBox
-          as="article"
-          rounded="10"
-          border="1px solid black"
-          backgroundColor={useColorModeValue('black', 'white')}
-          width="100%"
-          maxWidth="30rem"
-          height="18rem"
-          padding="1rem"
-        >
-          {/*todo: check if need to add to CMS*/}
-          <LinkOverlay href={DEVELOPER_DAO_WIKI} target="_blank">
-            <Icon
-              as={BsArrowUpRight}
-              position="absolute"
-              right="1rem"
-              color={useColorModeValue('white', 'black')}
-            />
-            <Box position="absolute" bottom="0.2rem" padding="1rem 0.5rem">
-              <Text variant="large" color={useColorModeValue('white', 'black')}>
-                {t('callToAction.wiki.title')}
-              </Text>
-              <Text
-                variant="normal"
-                fontSize="xs"
-                color={useColorModeValue('white', 'black')}
-              >
-                {t('callToAction.wiki.body')}
-              </Text>
-            </Box>
-          </LinkOverlay>
-        </LinkBox>
       </Flex>
     </Flex>
   );

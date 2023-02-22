@@ -14,31 +14,32 @@ import {
 import { ArrowForwardIcon, MoonIcon, SunIcon } from '@chakra-ui/icons';
 import React, { ReactNode, useState } from 'react';
 
+//@ts-ignore
 const NavLinks = [
-  {
-    text: 'Blog',
-    href: 'https://blog.developerdao.com/',
-  },
-  {
-    text: 'Academy',
-    href: 'https://academy.developerdao.com',
-  },
-  {
-    text: 'Twitter',
-    href: 'https://twitter.com/developer_dao',
-  },
-  {
-    text: 'Newsletter',
-    href: 'https://developerdao.substack.com/',
-  },
-  {
-    text: 'Forum',
-    href: 'https://forum.developerdao.com/',
-  },
-  {
-    text: 'Jobs',
-    href: 'https://developerdao.pallet.com/jobs',
-  },
+  // {
+  //   text: 'Blog',
+  //   href: 'https://blog.developerdao.com/',
+  // },
+  // {
+  //   text: 'Academy',
+  //   href: 'https://academy.developerdao.com',
+  // },
+  // {
+  //   text: 'Twitter',
+  //   href: 'https://twitter.com/developer_dao',
+  // },
+  // {
+  //   text: 'Newsletter',
+  //   href: 'https://developerdao.substack.com/',
+  // },
+  // {
+  //   text: 'Forum',
+  //   href: 'https://forum.developerdao.com/',
+  // },
+  // {
+  //   text: 'Jobs',
+  //   href: 'https://developerdao.pallet.com/jobs',
+  // },
 ];
 
 const SwitchWithIcons = ({ display }: { display: any }) => {
@@ -100,7 +101,8 @@ const NavBar = () => {
             <Image
               w="4rem"
               h="4rem"
-              src={`/D_D_logo-${colorMode === 'dark' ? 'dark' : 'light'}.svg`}
+              // src={`/D_D_logo-${colorMode === 'dark' ? 'dark' : 'light'}.svg`}
+              src={'/logo.png'}
               alt="logo"
             />
             <Text
@@ -111,7 +113,7 @@ const NavBar = () => {
               color={colorMode === 'dark' ? '#FFFFFF' : '#000000'}
               display={{ base: 'block', md: 'none', lg: 'block' }}
             >
-              Developer DAO
+              AI3
             </Text>
           </Link>
         </Box>

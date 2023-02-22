@@ -8,7 +8,7 @@ import '@fontsource/inter/800.css';
 import { FaDiscord } from 'react-icons/fa';
 import { HomePage } from '../../types';
 
-import mainImg from '../../../public/main.png';
+import mainImg from '../../../public/future.png';
 
 type IntroProps = {
   heading: HomePage['heading'];
