@@ -42,7 +42,8 @@ const Intro: FC<IntroProps> = ({ heading, subHeading }) => {
             fontSize={{ base: '2.625rem', xl: '3.375rem' }}
             lineHeight={{ base: '2.625rem', xl: '4rem' }}
           >
-            {t(heading!)}
+            {/* {t(heading!)} */}
+            AI meets Web3
           </Text>
           <Text
             fontFamily="Inter"
@@ -51,7 +52,8 @@ const Intro: FC<IntroProps> = ({ heading, subHeading }) => {
             lineHeight="1.5"
             fontSize={{ base: '1.25rem', xl: '1.5rem' }}
           >
-            {t(subHeading!)}
+            {/* {t(subHeading!)} */}
+            AI3 is a community of builders  at the intersection of AI and Web3
           </Text>
           <Flex justifyContent="center" w="100" mt="3rem">
             <Button
@@ -71,7 +73,7 @@ const Intro: FC<IntroProps> = ({ heading, subHeading }) => {
                 window.open('https://claim.developerdao.com', '_blank');
               }}
             >
-              Claim $CODE
+              Mint NFT
             </Button>
 
             <Button

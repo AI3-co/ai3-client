@@ -54,6 +54,7 @@ const Purpose: FC<PurposeProps> = ({ values, mission, goals }) => {
           mb="1rem"
         >
           {t(title)}
+          hi
         </Text>
         <Text variant={isMobile ? 'normalMobile' : 'normal'}>{t(body)}</Text>
       </Box>

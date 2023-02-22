@@ -87,19 +87,19 @@ function Layout({
 
 export default Layout;
 
-export const getServerSideProps = async () => {
-  const { data } = await client.query({
-    query: gql`
-      query General {
-        general {
+// export const getServerSideProps = async () => {
+//   const { data } = await client.query({
+//     query: gql`
+//       query General {
+//         general {
          
-        }
-      }
-    `,
-  });
-  return {
-    props: {
-      ...(data?.general?.data ? { ...data.general.data.attributes } : {}),
-    },
-  };
-};
+//         }
+//       }
+//     `,
+//   });
+//   return {
+//     props: {
+//       ...(data?.general?.data ? { ...data.general.data.attributes } : {}),
+//     },
+//   };
+// };

@@ -55,129 +55,129 @@ export default function IndexPage(props: HomePageProps) {
   );
 }
 
-export const getServerSideProps = async ({ locale }: { locale: string }) => {
-  const { data } = await client.query<{
-    general: any;
-    homePage: StrapiSingleData<HomePage>;
-  }>({
-    query: gql`
-      query HomePage {
-        general {
-          data {
-            attributes {
-              news_ticker {
-                content
-              }
-              Footer {
-                logo {
-                  data {
-                    attributes {
-                      url
-                    }
-                  }
-                }
-                useful_links {
-                  title
-                  link
-                }
-                discover {
-                  title
-                  link
-                }
-                social {
-                  name
-                  link
-                }
-              }
-            }
-          }
-        }
-        homePage {
-          data {
-            attributes {
-              meta_og {
-                id
-                title
-                description
-                image
-                image_media {
-                  data {
-                    id
-                    attributes {
-                      provider
-                      url
-                    }
-                  }
-                }
-              }
-              heading
-              sub_heading
-              current_status {
-                statement {
-                  id
-                  name
-                  title
-                  description
-                }
-                link {
-                  id
-                  name
-                  type
-                  title
-                  link
-                  disabled
-                }
-              }
-              values {
-                id
-                name
-                description
-                title
-              }
-              mission
-              goals {
-                id
-                name
-                description
-                title
-              }
-              partners {
-                data {
-                  id
-                  attributes {
-                    name
-                    website
-                    logo_dark {
-                      data {
-                        attributes {
-                          provider
-                          url
-                        }
-                      }
-                    }
-                    logo_light {
-                      data {
-                        attributes {
-                          provider
-                          url
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    `,
-  });
+// export const getServerSideProps = async ({ locale }: { locale: string }) => {
+//   const { data } = await client.query<{
+//     general: any;
+//     homePage: StrapiSingleData<HomePage>;
+//   }>({
+//     query: gql`
+//       query HomePage {
+//         general {
+//           data {
+//             attributes {
+//               news_ticker {
+//                 content
+//               }
+//               Footer {
+//                 logo {
+//                   data {
+//                     attributes {
+//                       url
+//                     }
+//                   }
+//                 }
+//                 useful_links {
+//                   title
+//                   link
+//                 }
+//                 discover {
+//                   title
+//                   link
+//                 }
+//                 social {
+//                   name
+//                   link
+//                 }
+//               }
+//             }
+//           }
+//         }
+//         homePage {
+//           data {
+//             attributes {
+//               meta_og {
+//                 id
+//                 title
+//                 description
+//                 image
+//                 image_media {
+//                   data {
+//                     id
+//                     attributes {
+//                       provider
+//                       url
+//                     }
+//                   }
+//                 }
+//               }
+//               heading
+//               sub_heading
+//               current_status {
+//                 statement {
+//                   id
+//                   name
+//                   title
+//                   description
+//                 }
+//                 link {
+//                   id
+//                   name
+//                   type
+//                   title
+//                   link
+//                   disabled
+//                 }
+//               }
+//               values {
+//                 id
+//                 name
+//                 description
+//                 title
+//               }
+//               mission
+//               goals {
+//                 id
+//                 name
+//                 description
+//                 title
+//               }
+//               partners {
+//                 data {
+//                   id
+//                   attributes {
+//                     name
+//                     website
+//                     logo_dark {
+//                       data {
+//                         attributes {
+//                           provider
+//                           url
+//                         }
+//                       }
+//                     }
+//                     logo_light {
+//                       data {
+//                         attributes {
+//                           provider
+//                           url
+//                         }
+//                       }
+//                     }
+//                   }
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//     `,
+//   });
 
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, ['common'], nextI18nextConfig)),
-      ...(data?.homePage?.data ? { ...data.homePage.data.attributes } : {}),
-      ...(data?.general?.data ? { ...data.general.data.attributes } : {}),
-    },
-  };
-};
+//   return {
+//     props: {
+//       ...(await serverSideTranslations(locale, ['common'], nextI18nextConfig)),
+//       ...(data?.homePage?.data ? { ...data.homePage.data.attributes } : {}),
+//       ...(data?.general?.data ? { ...data.general.data.attributes } : {}),
+//     },
+//   };
+// };

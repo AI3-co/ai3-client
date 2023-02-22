@@ -1011,47 +1011,47 @@ export default function PrivcayPolicyPage({
   );
 }
 
-export const getServerSideProps = async ({ locale }: { locale: string }) => {
-  const { data } = await client.query({
-    query: gql`
-      query PrivacyPolucyPage {
-        general {
-          data {
-            attributes {
-              news_ticker {
-                content
-              }
-              Footer {
-                logo {
-                  data {
-                    attributes {
-                      url
-                    }
-                  }
-                }
-                useful_links {
-                  title
-                  link
-                }
-                discover {
-                  title
-                  link
-                }
-                social {
-                  name
-                  link
-                }
-              }
-            }
-          }
-        }
-      }
-    `,
-  });
+// export const getServerSideProps = async ({ locale }: { locale: string }) => {
+//   const { data } = await client.query({
+//     query: gql`
+//       query PrivacyPolucyPage {
+//         general {
+//           data {
+//             attributes {
+//               news_ticker {
+//                 content
+//               }
+//               Footer {
+//                 logo {
+//                   data {
+//                     attributes {
+//                       url
+//                     }
+//                   }
+//                 }
+//                 useful_links {
+//                   title
+//                   link
+//                 }
+//                 discover {
+//                   title
+//                   link
+//                 }
+//                 social {
+//                   name
+//                   link
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//     `,
+//   });
 
-  return {
-    props: {
-      ...(data?.general?.data ? { ...data.general.data.attributes } : {}),
-    },
-  };
-};
+//   return {
+//     props: {
+//       ...(data?.general?.data ? { ...data.general.data.attributes } : {}),
+//     },
+//   };
+// };
