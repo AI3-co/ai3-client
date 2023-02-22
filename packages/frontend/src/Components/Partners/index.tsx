@@ -11,6 +11,7 @@ import { useCallback } from 'react';
 
 import { Media, Partner, StrapiMultipleData } from '../../types';
 import { NEXT_PUBLIC_CMS_URL } from '../../utils';
+import mainImg from '../../../public/future.png';
 
 interface PartnersProps {
   data: StrapiMultipleData<Partner>;
@@ -19,9 +20,24 @@ interface PartnersProps {
 const Partners = ({ data: partners }: PartnersProps) => {
   const { colorMode } = useColorMode();
   const handleButtonClick = useCallback(() => {
-    const partnerFormUrl = 'https://airtable.com/shrYLrOrjhOHJUdVl';
+    const partnerFormUrl = 'https://discord.gg/6584yVqb';
     window.open(partnerFormUrl, '_blank');
   }, []);
+  partners = {
+    data: [],
+  }
+  partners.data = [
+    {
+      id: 1,
+      attributes: {
+        id: 1,
+        name: 'Developer DAO',
+        website: 'https://www.developerdao.com',
+        logo_dark: '',
+        logo_light: '',
+      },
+    }
+  ];
 
   const getLogo = useCallback(
     (partner: Partner) =>
@@ -64,7 +80,7 @@ const Partners = ({ data: partners }: PartnersProps) => {
               >
                 <img
                   loading="lazy"
-                  src={getLogoSrc(getLogo(partnerEntity.attributes))}
+                  src="https://www.developerdao.com/D_D_logo-light.svg"
                   alt={partnerEntity.attributes.name || 'partner image'}
                 />
               </Link>
@@ -87,7 +103,7 @@ const Partners = ({ data: partners }: PartnersProps) => {
         alignSelf="center"
         onClick={handleButtonClick}
       >
-        Become a partner <ArrowForwardIcon w="1.5rem" h={'22px'} ml="8px" />
+        Join Us <ArrowForwardIcon w="1.5rem" h={'22px'} ml="8px" />
       </Button>
     </Flex>
   );

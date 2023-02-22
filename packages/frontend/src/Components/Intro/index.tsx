@@ -98,7 +98,7 @@ const Intro: FC<IntroProps> = ({ heading, subHeading }) => {
               <Box as={FaDiscord} mr=".75rem" fontSize="2rem" />
               <Box>
                 <Text>Join Discord</Text>
-                <Text fontSize="0.75rem">(via Guild.xyz)</Text>
+                {/* <Text fontSize="0.75rem">(via Guild.xyz)</Text> */}
               </Box>
             </Button>
           </Flex>

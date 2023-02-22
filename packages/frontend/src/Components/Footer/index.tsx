@@ -53,6 +53,38 @@ type FooterProps = {
 const Footer: FC<FooterProps> = ({ data: footer }) => {
   const { colorMode } = useColorMode();
   const { t } = useTranslation();
+  footer = {
+    id: 1,
+    logo: null,
+    useful_links: [],
+    discover: [],
+    social: [
+      {
+        id: 1,
+        name: 'twitter',
+        title: 'Twitter',
+        type: null,
+        link: 'https://twitter.com/ai3_dao',
+        disabled: false,
+      },
+      {
+        id: 2,
+        name: 'github',
+        title: 'Github',
+        type: null,
+        link: 'https://github.com/AI3-co',
+        disabled: false,
+      },
+      {
+        id: 3,
+        name: 'discord',
+        title: 'Discord',
+        type: null,
+        link: 'https://discord.gg/6584yVqb',
+        disabled: false,
+      }
+    ],
+  }
 
   // // todo: use when footer would have logo-light/dark
   // const getLogoSrc = useCallback(
@@ -92,7 +124,8 @@ const Footer: FC<FooterProps> = ({ data: footer }) => {
             <Image
               width="5rem"
               h="5rem"
-              src={`/D_D_logo-${colorMode === 'dark' ? 'dark' : 'light'}.svg`}
+              // src={`/D_D_logo-${colorMode === 'dark' ? 'dark' : 'light'}.svg`}
+              src={"/logo.png"}
               alt="logo"
             />
             <Text
@@ -102,17 +135,17 @@ const Footer: FC<FooterProps> = ({ data: footer }) => {
               fontSize="1.7rem"
               color={colorMode === 'dark' ? '#FFFFFF' : '#000000'}
             >
-              Developer DAO
+              AI3
             </Text>
           </ChakraLink>
         </Stack>
 
         <Stack align={'flex-start'} paddingTop="1.4375rem">
-          <ListHeader>Useful Links</ListHeader>
+          {/* <ListHeader>Useful Links</ListHeader> */}
           {listLinks(footer?.useful_links!, t)}
         </Stack>
         <Stack align={'flex-start'} paddingTop="1.4375rem">
-          <ListHeader>Discover</ListHeader>
+          {/* <ListHeader>Discover</ListHeader> */}
           {listLinks(footer?.discover!, t)}
         </Stack>
         <Stack align={'flex-start'} paddingTop="1.4375rem">
@@ -124,11 +157,11 @@ const Footer: FC<FooterProps> = ({ data: footer }) => {
               </ChakraLink>
             ))}
           </ButtonGroup>
-          <NextLink href="https://vercel.com" passHref>
+          {/* <NextLink href="https://vercel.com" passHref>
             <ChakraLink bg="black" borderRadius="20%" mt="2rem !important">
               <Image src="https://raw.githubusercontent.com/nextauthjs/next-auth/canary/www/static/img/powered-by-vercel.svg" />
             </ChakraLink>
-          </NextLink>
+          </NextLink> */}
         </Stack>
       </SimpleGrid>
     </Box>
