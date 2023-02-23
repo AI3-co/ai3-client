@@ -26,7 +26,7 @@ const Purpose: FC<PurposeProps> = ({ values, mission, goals }) => {
       id: 1,
       name: 'Tech for public good',
       title: 'Tech for public good',
-      description: 'Tech for public good',
+      description: 'Harnessing the newest technological advancement to be tools for good and the betterment of mankind',
     },
     {
       id: 2,
