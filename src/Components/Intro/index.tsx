@@ -117,8 +117,8 @@ const Intro: FC<IntroProps> = ({ heading, subHeading }) => {
         justifyContent="space-between"
       >
         <div style={{
-          width: '85%',
-          height: '30%',
+          width: '70%',
+          height: '20%',
         }}>
           <Image src={mainImg} alt="main" loading="eager" />
           <Text
