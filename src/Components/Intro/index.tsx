@@ -115,7 +115,7 @@ const Intro: FC<IntroProps> = ({ heading, subHeading }) => {
         mb={{ base: '2rem', xl: 0 }}
         transform={{ base: 'translateY(0)', xl: 'translateY(-40px)' }}
       >
-        <Image src={mainImg} alt="main" loading="eager" />
+        <Image src={mainImg} alt="main" loading="eager" width={400} height={400} />
         <h3 style={{
           margin: '0 auto',
         }}>what does the future look like?</h3>
