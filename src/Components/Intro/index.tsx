@@ -116,9 +116,16 @@ const Intro: FC<IntroProps> = ({ heading, subHeading }) => {
         transform={{ base: 'translateY(0)', xl: 'translateY(-40px)' }}
       >
         <Image src={mainImg} alt="main" loading="eager" width={400} height={400} />
-        <h3 style={{
-          margin: '0 auto',
-        }}>what does the future look like?</h3>
+        <Text
+            fontFamily="Inter"
+            fontWeight="800"
+            // mr="2rem"
+            fontSize={{ base: '2.625rem', xl: '3.375rem' }}
+            lineHeight={{ base: '2.625rem', xl: '4rem' }}
+          >
+            {/* {t(heading!)} */}
+            AI meets Web3
+          </Text>
       </Flex>
     </Flex>
   );
