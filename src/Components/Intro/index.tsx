@@ -115,7 +115,11 @@ const Intro: FC<IntroProps> = ({ heading, subHeading }) => {
         mb={{ base: '2rem', xl: 0 }}
         transform={{ base: 'translateY(0)', xl: 'translateY(-40px)' }}
       >
-        <Image src={mainImg} alt="main" loading="eager" width={500} height={450} />
+        <div style={{
+          width: '85%',
+          height: '30%',
+        }}>
+          <Image src={mainImg} alt="main" loading="eager" />
         <Text
             fontFamily="Inter"
             fontWeight="500"
@@ -125,11 +129,13 @@ const Intro: FC<IntroProps> = ({ heading, subHeading }) => {
             style={{
               marginTop: '-5px',
               margin: '0 auto',
+              textAlign: 'center',
             }}
           >
             {/* {t(subHeading!)} */}
             What does the future look like?
           </Text>
+          </div>
       </Flex>
     </Flex>
   );
