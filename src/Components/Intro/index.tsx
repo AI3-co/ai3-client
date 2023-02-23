@@ -116,6 +116,9 @@ const Intro: FC<IntroProps> = ({ heading, subHeading }) => {
         transform={{ base: 'translateY(0)', xl: 'translateY(-40px)' }}
       >
         <Image src={mainImg} alt="main" loading="eager" />
+        <h3 style={{
+          margin: '0 auto',
+        }}>what does the future look like?</h3>
       </Flex>
     </Flex>
   );

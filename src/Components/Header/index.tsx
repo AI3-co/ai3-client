@@ -40,6 +40,18 @@ const NavLinks = [
   //   text: 'Jobs',
   //   href: 'https://developerdao.pallet.com/jobs',
   // },
+  {
+    text: 'Github',
+    href: 'https://github.com/AI3-co'
+  },
+  {
+    text: 'Discord',
+    href: 'https://discord.gg/6584yVqb'
+  },
+  {
+    text: 'Twitter',
+    href: 'https://twitter.com/ai3_dao'
+  },
 ];
 
 const SwitchWithIcons = ({ display }: { display: any }) => {
