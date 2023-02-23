@@ -102,7 +102,7 @@ const NavBar = () => {
               w="4rem"
               h="4rem"
               // src={`/D_D_logo-${colorMode === 'dark' ? 'dark' : 'light'}.svg`}
-              src={'/logo.png'}
+              src={`/logo_${colorMode === 'dark' ? 'dark' : 'light'}.png`}
               alt="logo"
             />
             <Text
