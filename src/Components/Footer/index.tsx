@@ -131,7 +131,7 @@ const Footer: FC<FooterProps> = ({ data: footer }) => {
               width="5rem"
               h="5rem"
               // src={`/D_D_logo-${colorMode === 'dark' ? 'dark' : 'light'}.svg`}
-              src={`/logo_${colorMode === 'dark' ? 'dark' : 'light'}.png`}
+              src={`/logo_${colorMode === 'dark' ? 'light' : 'light'}.png`}
               alt="logo"
             />
             <Text
