@@ -141,7 +141,7 @@ const Footer: FC<FooterProps> = ({ data: footer }) => {
               fontSize="1.7rem"
               color={colorMode === 'dark' ? '#FFFFFF' : '#000000'}
             >
-              AI3
+              {/* AI3 */}
             </Text>
           </ChakraLink>
         </Stack>

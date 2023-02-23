@@ -125,7 +125,6 @@ const NavBar = () => {
               color={colorMode === 'dark' ? '#FFFFFF' : '#000000'}
               display={{ base: 'block', md: 'none', lg: 'block' }}
             >
-              AI3
             </Text>
           </Link>
         </Box>
