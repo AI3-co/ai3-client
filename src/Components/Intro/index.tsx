@@ -116,16 +116,19 @@ const Intro: FC<IntroProps> = ({ heading, subHeading }) => {
         transform={{ base: 'translateY(0)', xl: 'translateY(-40px)' }}
       >
         <Image src={mainImg} alt="main" loading="eager" />
+        <div>
         <Text
             fontFamily="Inter"
             fontWeight="500"
             mt="2rem"
             lineHeight="1.5"
             fontSize={{ base: '1.25rem', xl: '1.5rem' }}
+            textAlign="center"
           >
             {/* {t(subHeading!)} */}
-            AI3 is a community of builders at the intersection of AI and Web3
+            What does the future look like?
           </Text>
+          </div>
       </Flex>
     </Flex>
   );
