@@ -28,7 +28,7 @@ function Footer() {
             </VisuallyHidden>
           </>
         </SocialIconLink>
-        <SocialIconLink href="https://discord.gg/devdao" label="Discord">
+        <SocialIconLink href="https://discord.gg/6584yVqb" label="Discord">
           <>
             <FaDiscord />
             <VisuallyHidden>
