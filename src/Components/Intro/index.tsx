@@ -115,22 +115,7 @@ const Intro: FC<IntroProps> = ({ heading, subHeading }) => {
         mb={{ base: '2rem', xl: 0 }}
         transform={{ base: 'translateY(0)', xl: 'translateY(-40px)' }}
       >
-        <div style={{
-          maxWidth: '80%',
-          // backgroundColor: 'blue',
-        }}>
-          <Image src={mainImg} alt="main" loading="eager" width={450} height={350} />
-          <Text
-              fontFamily="Inter"
-              fontWeight="500"
-              mt="2rem"
-              lineHeight="1.5"
-              fontSize={{ base: '1.25rem', xl: '1.5rem' }}
-            >
-              {/* {t(subHeading!)} */}
-              AI3 is a community of builders at the intersection of AI and Web3
-            </Text>
-          </div>
+        <Image src={mainImg} alt="main" loading="eager" />
       </Flex>
     </Flex>
   );
