@@ -38,6 +38,54 @@ const Partners = ({ data: partners }: PartnersProps) => {
         // @ts-ignore
         logo_light: '',
       },
+    },
+    {
+      id: 2,
+      attributes: {
+        id: 1,
+        name: 'Aragon',
+        website: 'https://www.developerdao.com',
+        // @ts-ignore
+        logo_dark: '',
+        // @ts-ignore
+        logo_light: '',
+      },
+    },
+    {
+      id: 3,
+      attributes: {
+        id: 1,
+        name: 'OpenAI',
+        website: 'https://www.developerdao.com',
+        // @ts-ignore
+        logo_dark: '',
+        // @ts-ignore
+        logo_light: '',
+      },
+    },
+    {
+      id: 4,
+      attributes: {
+        id: 1,
+        name: 'Midjourney',
+        website: 'https://www.developerdao.com',
+        // @ts-ignore
+        logo_dark: '',
+        // @ts-ignore
+        logo_light: '',
+      },
+    },
+    {
+      id: 5,
+      attributes: {
+        id: 1,
+        name: 'Github Copilot',
+        website: 'https://www.developerdao.com',
+        // @ts-ignore
+        logo_dark: '',
+        // @ts-ignore
+        logo_light: '',
+      },
     }
   ];
 
@@ -67,7 +115,7 @@ const Partners = ({ data: partners }: PartnersProps) => {
         mb={{ base: '5rem', xl: '6.175rem' }}
         textAlign="center"
       >
-        Our Partners
+        Built with
       </Heading>
       <Flex flexDir={{ base: 'column', xl: 'row' }} alignItems={'center'}>
         {partners?.data ? (

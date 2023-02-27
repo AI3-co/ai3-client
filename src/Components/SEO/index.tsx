@@ -10,16 +10,16 @@ type SEOProps = {
 };
 
 const SEO = ({
-  title = 'title',
-  description = 'description',
-  image = `${DEVELOPER_DAO_WEBSITE}/social-banner.png`,
+  title = 'Ai3.co',
+  description = 'Ai and Web3',
+  image = `https://github.com/AI3-co/ai3-client/blob/main/public/logo_light.png`,
 }: SEOProps) => {
   const { t } = useTranslation();
 
   return (
     <Head>
       <meta charSet="utf-8" />
-      <link rel="icon" href="favicon.ico" />
+      <link rel="icon" href="logo_ light.png" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="theme-color" content="#000000" />
 
@@ -46,19 +46,19 @@ const SEO = ({
       <link
         rel="apple-touch-icon"
         sizes="180x180"
-        href="apple-touch-icon.png"
+        href="logo_dark.png"
       />
       <link
         rel="icon"
         type="image/png"
         sizes="32x32"
-        href="favicon-32x32.png"
+        href="logo_dark.png"
       />
       <link
         rel="icon"
         type="image/png"
         sizes="16x16"
-        href="favicon-16x16.png"
+        href="logo_dark.png"
       />
       <link rel="manifest" href="site.webmanifest" />
       <link rel="mask-icon" href="safari-pinned-tab.svg" color="#000000" />
