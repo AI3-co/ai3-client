@@ -125,8 +125,8 @@ const Partners = ({ data: partners }: PartnersProps) => {
                 target="_blank"
               >
                 <div style={{
-                  width: '200px',
-                  height: '200px',
+                  width: '220px',
+                  height: '220px',
                   display: 'flex',
                   justifyContent: 'center',
                   alignItems: 'center',
