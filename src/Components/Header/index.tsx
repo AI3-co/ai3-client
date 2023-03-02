@@ -46,7 +46,7 @@ const NavLinks = [
   },
   {
     text: 'Discord',
-    href: 'https://discord.gg/6584yVqb'
+    href: 'https://discord.gg/ztWZ6UjuuS'
   },
   {
     text: 'Twitter',

@@ -92,7 +92,7 @@ const Intro: FC<IntroProps> = ({ heading, subHeading }) => {
                 borderColor: 'black',
               }}
               onClick={() => {
-                window.open('https://discord.gg/6584yVqb', '_blank');
+                window.open('https://discord.gg/ztWZ6UjuuS', '_blank');
               }}
             >
               <Box as={FaDiscord} mr=".75rem" fontSize="2rem" />

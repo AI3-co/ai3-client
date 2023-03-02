@@ -57,4 +57,4 @@ derivatives projects
 
 Twitter: https://twitter.com/developer_dao
 
-Discord: https://discord.gg/YGyCbb8h
+Discord: https://discord.gg/ztWZ6UjuuS

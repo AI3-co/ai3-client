@@ -86,7 +86,7 @@ const Footer: FC<FooterProps> = ({ data: footer }) => {
         title: 'Discord',
         // @ts-ignore
         type: null,
-        link: 'https://discord.gg/6584yVqb',
+        link: 'https://discord.gg/ztWZ6UjuuS',
         disabled: false,
       }
     ],

@@ -46,7 +46,7 @@ The project was started as an experiment by [Nader Dabit](https://twitter.com/da
 
 ## How do I join?
 
-The DAO operates inside our [discord server](https://discord.gg/ASjBPJuNhS). To gain access to this server you need to own a [Devs for Revolution](https://opensea.io/collection/devs-for-revolution) NFT. The contract for purchasing one [can be found on etherscan.io](https://etherscan.io/address/0x25ed58c027921e14d86380ea2646e3a1b5c55a8b#writeContract). If you're not sure how to mint an NFT, [check out this how-to article](https://jonkuperman.com/how-to-join-developer-dao/) by @jkup.
+The DAO operates inside our [discord server](https://discord.gg/ztWZ6UjuuS). To gain access to this server you need to own a [Devs for Revolution](https://opensea.io/collection/devs-for-revolution) NFT. The contract for purchasing one [can be found on etherscan.io](https://etherscan.io/address/0x25ed58c027921e14d86380ea2646e3a1b5c55a8b#writeContract). If you're not sure how to mint an NFT, [check out this how-to article](https://jonkuperman.com/how-to-join-developer-dao/) by @jkup.
 
 Whilst there is no charge for the NFT you will have to pay a "gas fee" for the Ethereum Blockchain network in order to mint one. This fee can range wildly from about $40 up to and over $400 at peak times. You can check current gas fee using the [Ethereum gas price tracker](https://etherscan.io/gastracker). If the fee is high you may want to wait and come back later.
 

@@ -24,7 +24,7 @@ interface PartnersProps {
 const Partners = ({ data: partners }: PartnersProps) => {
   const { colorMode } = useColorMode();
   const handleButtonClick = useCallback(() => {
-    const partnerFormUrl = 'https://discord.gg/6584yVqb';
+    const partnerFormUrl = 'https://discord.gg/ztWZ6UjuuS';
     window.open(partnerFormUrl, '_blank');
   }, []);
   partners = {
