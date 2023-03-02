@@ -124,12 +124,23 @@ const Partners = ({ data: partners }: PartnersProps) => {
                 mx={{ base: '0', xl: '3rem' }}
                 target="_blank"
               >
+                <div style={{
+                  width: '200px',
+                  height: '200px',
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  backgroundColor: 'white',
+                  borderRadius: '20%',
+                  boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.1)',
+                }}>
                 <img
                   loading="lazy"
                   // @ts-ignore
                   src={colorMode === 'dark' ? partnerEntity.attributes.logo_dark : partnerEntity.attributes.logo_light}
                   alt={partnerEntity.attributes.name || 'partner image'}
                 />
+                </div>
               </Link>
             );
           })
