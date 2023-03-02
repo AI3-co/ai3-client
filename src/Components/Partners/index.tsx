@@ -38,9 +38,9 @@ const Partners = ({ data: partners }: PartnersProps) => {
         name: 'Developer DAO',
         website: 'https://www.developerdao.com',
         // @ts-ignore
-        logo_dark: 'developerdao.png',
+        logo_dark: 'D_D_logo-light.svg',
         // @ts-ignore
-        logo_light: 'developerdao.png',
+        logo_light: 'D_D_logo-light.svg',
       },
     },
     {
