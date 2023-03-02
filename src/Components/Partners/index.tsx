@@ -126,6 +126,7 @@ const Partners = ({ data: partners }: PartnersProps) => {
               >
                 <img
                   loading="lazy"
+                  // @ts-ignore
                   src={colorMode === 'dark' ? partnerEntity.attributes.logo_dark : partnerEntity.attributes.logo_light}
                   alt={partnerEntity.attributes.name || 'partner image'}
                 />
