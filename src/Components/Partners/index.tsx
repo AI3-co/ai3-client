@@ -12,6 +12,10 @@ import { useCallback } from 'react';
 import { Media, Partner, StrapiMultipleData } from '../../types';
 import { NEXT_PUBLIC_CMS_URL } from '../../utils';
 import mainImg from '../../../public/future.png';
+import aragonImage from '../../../public/aragon-logo.png';
+import openaiImage from '../../../public/openai.png';
+import midjourneyImage from '../../../public/midjourney.png';
+import copilotImage from '../../../public/copilot.png';
 
 interface PartnersProps {
   data: StrapiMultipleData<Partner>;
@@ -34,9 +38,9 @@ const Partners = ({ data: partners }: PartnersProps) => {
         name: 'Developer DAO',
         website: 'https://www.developerdao.com',
         // @ts-ignore
-        logo_dark: '',
+        logo_dark: 'developerdao.png',
         // @ts-ignore
-        logo_light: '',
+        logo_light: 'developerdao.png',
       },
     },
     {
@@ -44,11 +48,11 @@ const Partners = ({ data: partners }: PartnersProps) => {
       attributes: {
         id: 1,
         name: 'Aragon',
-        website: 'https://www.developerdao.com',
+        website: 'https://aragon.org',
         // @ts-ignore
-        logo_dark: '',
+        logo_dark: 'aragon-logo.png',
         // @ts-ignore
-        logo_light: '',
+        logo_light: 'aragon-logo.png',
       },
     },
     {
@@ -56,11 +60,11 @@ const Partners = ({ data: partners }: PartnersProps) => {
       attributes: {
         id: 1,
         name: 'OpenAI',
-        website: 'https://www.developerdao.com',
+        website: 'https://openai.com',
         // @ts-ignore
-        logo_dark: '',
+        logo_dark: 'openai.png',
         // @ts-ignore
-        logo_light: '',
+        logo_light: 'openai.png',
       },
     },
     {
@@ -68,11 +72,11 @@ const Partners = ({ data: partners }: PartnersProps) => {
       attributes: {
         id: 1,
         name: 'Midjourney',
-        website: 'https://www.developerdao.com',
+        website: 'https://www.midjourney.com/home',
         // @ts-ignore
-        logo_dark: '',
+        logo_dark: 'midjourney.png',
         // @ts-ignore
-        logo_light: '',
+        logo_light: 'midjourney.png',
       },
     },
     {
@@ -80,22 +84,14 @@ const Partners = ({ data: partners }: PartnersProps) => {
       attributes: {
         id: 1,
         name: 'Github Copilot',
-        website: 'https://www.developerdao.com',
+        website: 'https://github.com/features/copilot',
         // @ts-ignore
-        logo_dark: '',
+        logo_dark: 'copilot.png',
         // @ts-ignore
-        logo_light: '',
+        logo_light: 'copilot.png',
       },
     }
   ];
-
-  const getLogo = useCallback(
-    (partner: Partner) =>
-      colorMode === 'dark'
-        ? partner.logo_dark.data?.attributes
-        : partner.logo_light.data?.attributes,
-    [colorMode],
-  );
 
   const getLogoSrc = useCallback(
     (logo?: Media) =>
@@ -115,7 +111,7 @@ const Partners = ({ data: partners }: PartnersProps) => {
         mb={{ base: '5rem', xl: '6.175rem' }}
         textAlign="center"
       >
-        Built with
+        Building with
       </Heading>
       <Flex flexDir={{ base: 'column', xl: 'row' }} alignItems={'center'}>
         {partners?.data ? (
@@ -130,7 +126,7 @@ const Partners = ({ data: partners }: PartnersProps) => {
               >
                 <img
                   loading="lazy"
-                  src="https://www.developerdao.com/D_D_logo-light.svg"
+                  src={colorMode === 'dark' ? partnerEntity.attributes.logo_dark : partnerEntity.attributes.logo_light}
                   alt={partnerEntity.attributes.name || 'partner image'}
                 />
               </Link>
