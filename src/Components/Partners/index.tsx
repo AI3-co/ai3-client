@@ -74,9 +74,9 @@ const Partners = ({ data: partners }: PartnersProps) => {
         name: 'Midjourney',
         website: 'https://www.midjourney.com/home',
         // @ts-ignore
-        logo_dark: 'midjourney.png',
+        logo_dark: 'midjourney-1.png',
         // @ts-ignore
-        logo_light: 'midjourney.png',
+        logo_light: 'midjourney-1.png',
       },
     },
     {
