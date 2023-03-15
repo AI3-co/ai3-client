@@ -56,7 +56,7 @@ const Intro: FC<IntroProps> = ({ heading, subHeading }) => {
             AI3 is a community of builders at the intersection of AI and Web3
           </Text>
           <Flex justifyContent="center" w="100" mt="3rem">
-            <Button
+            {/* <Button
               px="1.5rem"
               border="1px solid black"
               borderRadius="0.625rem"
@@ -74,7 +74,7 @@ const Intro: FC<IntroProps> = ({ heading, subHeading }) => {
               }}
             >
               Mint NFT
-            </Button>
+            </Button> */}
 
             <Button
               px="1.5rem"
